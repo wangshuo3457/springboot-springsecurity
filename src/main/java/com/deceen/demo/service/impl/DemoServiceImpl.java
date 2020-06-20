@@ -4,7 +4,6 @@ import com.deceen.demo.dao.DemoMapper;
 import com.deceen.demo.entity.DemoEntity;
 import com.deceen.demo.service.DemoService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.authentication.encoding.PasswordEncoder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
