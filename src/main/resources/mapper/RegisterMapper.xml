@@ -10,7 +10,7 @@
         <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Long">
             SELECT LAST_INSERT_ID()
         </selectKey>
-        insert into user (username, password)
+        insert into user (user_name, password)
         values (#{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR})
     </insert>
 

@@ -4,7 +4,7 @@
 
     <select id="getUser" parameterType="String" resultType="com.deceen.demo.entity.SelfUserDetails">
         SELECT * FROM user
-        where username = #{username}
+        where user_name = #{username}
     </select>
 
 </mapper>

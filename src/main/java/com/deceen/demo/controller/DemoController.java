@@ -4,6 +4,7 @@ import com.deceen.common.Enums.ResultEnum;
 import com.deceen.common.VO.ResultVO;
 import com.deceen.demo.entity.DemoEntity;
 import com.deceen.demo.service.DemoService;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -37,7 +38,7 @@ public class DemoController {
      * @return
      */
     @PostMapping("/register")
-    public Map<String, Object> register(String username,String password){
+    public Map<String, Object> register(@Param("username") String username,@Param("password") String password){
         orderService.register(username,password);
         return ResultVO.result(ResultEnum.SUCCESS,true);
     }
